@@ -8,7 +8,7 @@ type ProjectCardProps = {
   bg: string
 }
 
-const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ link, logo, title, bg }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -31,20 +31,16 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       },
     }}
   >
-    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
-    <div
+    <img
+      src={logo}
       sx={{
-        textTransform: `uppercase`,
-        letterSpacing: `wide`,
-        pt: 4,
-        fontSize: [4, 5],
-        fontWeight: `medium`,
-        lineHeight: 1,
+        width: `100%`,
+        height: `100%`,
+        objectFit: `contain`,
       }}
-    >
-      {title}
-    </div>
+      alt={title}
+    />
   </a>
-)
+);
 
 export default ProjectCard
