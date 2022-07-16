@@ -28,11 +28,11 @@ const Footer = () => {
       <br />
       <p>Made with ❤️ in Berlin.</p>
       <p>
-        <span>Developed with </span>
+        <span>Developed with</span>
         <Link aria-label="Gatsby" sx={{ ml: 2 }} href="https://www.gatsbyjs.com/">
           Gatsby
         </Link>
-        <span> using the awesome </span>
+        <span> using the awesome</span>
         <Link
           aria-label="Link to the theme's GitHub repository"
           sx={{ ml: 2 }}
@@ -47,6 +47,7 @@ const Footer = () => {
         >
           LekoArts
         </Link>
+        <span>.</span>
       </p>
     </Box>
   )
