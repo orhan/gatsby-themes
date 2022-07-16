@@ -15,6 +15,8 @@ const ProjectCard = ({ link, logo, title, bg }: ProjectCardProps) => (
     rel="noreferrer noopener"
     sx={{
       width: `100%`,
+      maxWidth: `250px`,
+      maxHeight: `100px`,
       boxShadow: `lg`,
       position: `relative`,
       textDecoration: `none`,
@@ -22,6 +24,7 @@ const ProjectCard = ({ link, logo, title, bg }: ProjectCardProps) => (
       px: 4,
       py: [4, 5],
       color: `white`,
+      padding: 0,
       background: bg || `none`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
