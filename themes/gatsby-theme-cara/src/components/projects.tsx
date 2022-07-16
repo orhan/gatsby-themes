@@ -22,6 +22,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
         <div
           sx={{
             display: `flex`,
+            flexDirection: 'column',
             h2: { color: `white !important` },
           }}
         >
