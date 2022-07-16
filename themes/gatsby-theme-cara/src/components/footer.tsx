@@ -26,18 +26,8 @@ const Footer = () => {
       </button>
       Copyright &copy; {new Date().getFullYear()}. All rights reserved.
       <br />
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
-          mt: 3,
-          color: `text`,
-          fontWeight: `semibold`,
-          a: { color: `text` },
-        }}
-      >
-        <span>Made with ❤️ in Berlin.</span>
-        <br />
+      <p>Made with ❤️ in Berlin.</p>
+      <p>
         <span>Developed with </span>
         <Link aria-label="Gatsby" sx={{ ml: 2 }} href="https://www.gatsbyjs.com/">
           Gatsby
@@ -57,7 +47,7 @@ const Footer = () => {
         >
           LekoArts
         </Link>
-      </Flex>
+      </p>
     </Box>
   )
 }
