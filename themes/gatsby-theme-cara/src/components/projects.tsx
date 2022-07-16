@@ -21,10 +21,8 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       <Inner>
         <div
           sx={{
-            display: `grid`,
-            gridGap: [4, 4, 4, 5],
-            gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
-            h2: { gridColumn: `-1/1`, color: `white !important` },
+            display: `flex`,
+            h2: { color: `white !important` },
           }}
         >
           <ProjectsMDX />
