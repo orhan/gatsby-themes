@@ -2,11 +2,11 @@
 import { jsx } from "theme-ui"
 
 type ProjectCardProps = {
-  link: string
-  title: string
-  children: React.ReactNode
-  bg: string
-}
+  link: string;
+  title: string;
+  logo: string;
+  bg: string;
+};
 
 const ProjectCard = ({ link, logo, title, bg }: ProjectCardProps) => (
   <a
