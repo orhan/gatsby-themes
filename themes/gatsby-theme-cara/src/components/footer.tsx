@@ -11,7 +11,13 @@ const Footer = () => {
   return (
     <Box as="footer" variant="footer">
       <button
-        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
+        sx={{
+          variant: `buttons.toggle`,
+          fontWeight: `semibold`,
+          display: `block`,
+          mx: `auto`,
+          mb: 3,
+        }}
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"
@@ -35,16 +41,19 @@ const Footer = () => {
         ) : (
           <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2_w30.png" alt="LekoArts Logo" />
         )}
-        {` `}
+        {` Made with ❤️ in Berlin.\nDeveloped with `}
+        <Link aria-label="Gatsby" sx={{ ml: 2 }} href="https://www.gatsbyjs.com/">
+          Gatsby
+        </Link>
+        {` using the awesome `}
         <Link
           aria-label="Link to the theme's GitHub repository"
           sx={{ ml: 2 }}
           href="https://github.com/LekoArts/gatsby-themes/tree/main/themes/gatsby-theme-cara"
         >
-          Theme
+          Cara Theme
         </Link>
-        <div sx={{ mx: 1 }}>by</div>
-        {` `}
+        {` by `}
         <Link
           aria-label="Link to the theme author's website"
           href="https://www.lekoarts.de?utm_source=cara&utm_medium=Theme"
