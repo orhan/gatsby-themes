@@ -8,30 +8,33 @@ type ProjectCardProps = {
   bg: string
 }
 
-const ProjectCard = ({ link, logo, title, bg }: ProjectCardProps) => (
+const ProjectCard = ({ link, logo, title, bg, style }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
     rel="noreferrer noopener"
     sx={{
-      width: `100%`,
-      maxWidth: `250px`,
-      maxHeight: `100px`,
-      boxShadow: `lg`,
-      position: `relative`,
-      textDecoration: `none`,
-      borderRadius: `lg`,
-      px: 4,
-      py: [4, 5],
-      color: `white`,
-      padding: `12% !important`,
-      background: bg || `none`,
-      transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
-      "&:hover": {
-        color: `white !important`,
-        transform: `translateY(-5px)`,
-        boxShadow: `xl`,
+      ...{
+        width: `100%`,
+        maxWidth: `250px`,
+        maxHeight: `100px`,
+        boxShadow: `lg`,
+        position: `relative`,
+        textDecoration: `none`,
+        borderRadius: `lg`,
+        px: 4,
+        py: [4, 5],
+        color: `white`,
+        padding: `12% !important`,
+        background: bg || `none`,
+        transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
+        "&:hover": {
+          color: `white !important`,
+          transform: `translateY(-5px)`,
+          boxShadow: `xl`,
+        },
       },
+      ...style,
     }}
   >
     <img
